@@ -1,2 +1,2 @@
 # TwitSentiAnalysis
-Project is step towards to twitter sentimental analysis.
+Project is twitter sentimental analysis.
