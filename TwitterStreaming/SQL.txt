@@ -1,0 +1,8 @@
+﻿create table Tweets([Id] nvarchar(256),
+[Text] nvarchar(256),
+[RetweetCount] nvarchar(256),
+[FavoriteCount] nvarchar(256),
+[Score] nvarchar(256),
+[Sentimenttype] int,
+[Createddate] DATETIME,
+[TimeStamp] DATETIME);
