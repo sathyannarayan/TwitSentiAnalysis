@@ -1,4 +1,4 @@
-using System;
+        using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,7 +19,7 @@ class Program : TopologyDescriptor
         topoBuilder.SetSpout("TwitterReaderSpout",TwitterReaderSpout.Get,
             new Dictionary<string, List<string>>(){
                 {Constants.DEFAULT_STREAM_ID, TwitterReaderSpout.OutputSchemaName}},1, true);
-
+        // create a bolt with tick frequence of 10 secs to emit tuple
         var boltConfig = new StormConfig();
         boltConfig.Set("topology.tick.tuple.freq.secs", "10");
             topoBuilder.SetBolt("TweetRankBolt",TweetRankBolt.Get,
